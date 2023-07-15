@@ -1,0 +1,26 @@
+<style>
+        .footer-title {
+        display: inline-block;
+        position: relative;
+        color: white
+    }
+    .footer-title::before {
+        content: "";
+  position: absolute;
+  left: 49%;
+  bottom: 1%;
+  width: 105%;
+  height: 3px;
+  transform: skew(-12deg) translateX(-50%) rotate(-2deg);
+  background: #fda6c1a5;
+  z-index: -1;
+    }
+
+    .post-title:hover::before {
+        background: #fda6c1f0;
+    }
+    </style>
+
+<footer class="pt:28 pb:24 mt:auto">
+    <div class="f:fade-60 f:12">Personal Blog by <a class="f:bold footer-title" href="https://harshturna.com" target="_blank">Harsh</a></div>
+</footer>

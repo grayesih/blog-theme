@@ -1,0 +1,29 @@
+<style>
+    .post-title {
+        display: inline-block;
+        position: relative;
+    }
+    .post-title::before {
+        content: "";
+  position: absolute;
+  left: 49%;
+  bottom: 6%;
+  width: 100%;
+  height: 3px;
+  transform: skew(-12deg) translateX(-50%) rotate(0deg);
+  background: #fda6c154;
+  z-index: -1;
+    }
+
+    .post-title:hover::before {
+        background: #fda6c1c5;
+    }
+</style>
+
+<div class="mb:12 py:8">
+    <a class="post-title f:18! font:semibold! f:fade-30! text-decoration:none f:fade-10!:hover transition:150ms;ease-in" href="{{ .url }}">
+        {{ .title }}
+    </a>
+    <div class="mt:8 f:14 f:fade-60"><time>{{ .subTitle }}</time></div>
+    {{ .hi }}
+</div>

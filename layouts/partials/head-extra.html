@@ -1,0 +1,21 @@
+<style>
+    .post-title {
+        display: inline-block;
+        position: relative;
+    }
+    .post-title::before {
+        content: "";
+  position: absolute;
+  left: 49%;
+  bottom: 6%;
+  width: 92%;
+  height: 3px;
+  transform: skew(-12deg) translateX(-50%) rotate(0deg);
+  background: #fda6c154;
+  z-index: -1;
+    }
+
+    .post-title:hover::before {
+        background: #fda6c1c5;
+    }
+</style>

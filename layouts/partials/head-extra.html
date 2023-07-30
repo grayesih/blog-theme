@@ -1,36 +1,40 @@
 <style>
-.title-name {
+  .title-name {
     font-family: 'Caveat', cursive;
     font-size: 1.8rem;
-    color: #faaacc;
+    color: #f398c0;
     font-weight: bold;
-}
- .post-title {
-    color: #faaacc !important;
+  }
+
+  .post-title {
+    color: #f398c0 !important;
   }
 
   .post-title:hover {
-    color: #fbb3d1 !important;
+    color: #f180b1 !important;
   }
 
-        .footer-title {
-        display: inline-block;
-        position: relative;
-        color: white
-    }
-    .footer-title::before {
-        content: "";
-  position: absolute;
-  left: 49%;
-  bottom: 1%;
-  width: 105%;
-  height: 3px;
-  transform: skew(-12deg) translateX(-50%) rotate(-2deg);
-  background: #fda6c1a5;
-  z-index: -1;
-    }
+  .footer-title {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem
+  }
 
-    .post-title:hover::before {
-        background: #fda6c1f0;
-    }
+  .footer-title::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    bottom: 1%;
+    width: 105%;
+    height: 3px;
+    transform: skew(-12deg) translateX(-50%) rotate(-2deg);
+    background: #fda6c1a5;
+    z-index: -1;
+  }
+
+  .post-title:hover::before {
+    background: #fda6c1f0;
+  }
 </style>
